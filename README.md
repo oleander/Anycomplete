@@ -6,7 +6,15 @@ The magic of Google Autocomplete while you're typing. Anywhere.
 
 ### Installation
 
-An extension for [Hammerspoon](http://hammerspoon.org/). Once Hammerspoon is installed, clone this repository to your `~/.hammerspoon` directory.
+Anycomplete is an extension for [Hammerspoon](http://hammerspoon.org/). Once Hammerspoon is installed (see `Install Hammerspoon` below) you can run the following script to install Autocomplete.
+
+```
+$ curl -sSL https://raw.githubusercontent.com/nathancahill/Anycomplete/master/install.sh | bash
+```
+
+[install.sh](https://github.com/nathancahill/Anycomplete/blob/master/install.sh) just clones this repository into `~/.hammerspoon/`, loads it into Hammerspoon and sets ⌃⌥⌘G as the default keybinding.
+
+#### Manual installation
 
     git clone https://github.com/nathancahill/anycomplete.git ~/.hammerspoon/anycomplete
 
@@ -19,6 +27,16 @@ Alternatively, copy `anycomplete.lua` from this repository to whereever
 you keep other Hammerspoon modules and load it appropriately.
 
 Reload the Hammerspoon config.
+
+#### Install Hammerspoon
+
+Hammerspoon can be installed using [homebrew/caskroom](https://caskroom.github.io/).
+
+```
+$ brew tap caskroom/cask
+$ brew cask install hammerspoon
+$ open -a /Applications/Hammerspoon.app
+```
 
 
 ### Usage
